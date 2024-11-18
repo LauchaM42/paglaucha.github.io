@@ -1,0 +1,192 @@
+/* Importamos el tipo de letra "Goldman" y "Press Start 2P" de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Silkscreen&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Hacemos un reset a todos los espacios que deja el navegador por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos principales */
+h2 {
+  font-size: 1.8rem; /* tamaño 16 píxeles por 1.8, donde rem = 16px */
+  text-align: center;
+  text-transform: uppercase; /* transforma todas las letras de h2 en mayúsculas */
+  font-weight: 500; /* ancho de la letra */
+  padding-bottom: 50px; /* deja un espacio por debajo de 50px */
+  font-family: "Orbitron", sans-serif; /* tipo de letra que importamos de google fonts */
+  color: #FFF700;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-family: "Silkscreen", sans-serif;
+  color: #FFF700;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0; /* margen superior e inferior de 10px y margen izquierda y derecha de 0 puntos */
+  line-height: 1.7em; /* salto de línea */
+}
+
+a {
+  text-decoration: none; /* enlaces sin la línea que tienen por defecto */
+}
+
+/* Utility Classes */
+.container {
+  margin: auto; /* 0px de margen vertical, centrado horizontalmente */
+  max-width: 1300px; /* coloca el ancho de 1300px como valor máximo del container */
+  overflow: auto;
+  padding: 0 20px; /* crea un espacio en los bordes */
+}
+
+.large {
+  font-size: 20px;
+}
+
+.texto-contacto {
+  font-size: 16px;
+}
+
+.medium {
+  font-size: 19px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 15px 40px; /* me permite separar el texto de la línea del botón: 15px arriba/abajo y 40px izquierda/derecha */
+  letter-spacing: 1px; /* separación entre letras */
+  font-family: "Anton", sans-serif;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 5px solid #fff; /* color blanco */
+  color: #0AD7F7;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.btn-outline:hover {
+  /* cuando pase el ratón por encima que me cambie los colores de fondo y de las letras */
+  background: #256CF0; /* color blanco en Hex */
+  color: #F4F70A; /* color negro en Hex */
+  border: 0px solid #fff;
+}
+
+/* Navbar */
+#navbar {
+  overflow: auto; /* define lo que hace si el tamaño es muy grande */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#navbar a {
+  color: #000; /* color del enlace de color negro */
+}
+
+#navbar .logo {
+  float: left; /* posiciona a la izquierda del contenedor */
+  padding-top: 12px;
+}
+
+#navbar img {
+  height: 80px;
+}
+
+#navbar ul {
+  list-style: none; /* le quitamos los puntos a la lista no ordenada */
+  float: right; /* mandamos el menú a la derecha del contenedor */
+}
+
+#navbar ul li {
+  float: left; /* en vez de listarse los list items (li) en vertical, se tienen que poner juntos en la misma línea */
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Anton", sans-serif;
+  color: #00D4FF;
+}
+
+#showcase {
+background-image: url("img/fondo.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover; /* Escala la imagen (mientras se preserva su ratio) al tamaño más pequeño posible para llenar el contenedor */
+height: 550px; /* altura de la foto principal */
+text-align: center;
+padding: 100px;
+}
+
+#showcase .btn {
+  margin-top: 180px; /* distancia desde arriba para poner el botón de proyectos en la foto principal */
+}
+
+/* Projects */
+#projects {
+  padding: 80px 0;
+}
+
+.projects-row {
+  display: flex; /* crea un display ajustando las fotos en una línea, si no se utiliza se ven en filas */
+}
+
+.projects-row img {
+  width: 80%; /* ajusta al 100% la imagen */
+}
+
+/* About */
+#about {
+  padding: 80px 0;
+  background: #00D4FF; /* fondo color gris */
+}
+
+.about-row {
+  display: flex;
+}
+
+.about-row-experience,
+.about-row-me {
+  width: 50%; /* la mitad de la pantalla */
+  padding-left: 50px;
+}
+
+/* Contact */
+#contact {
+  padding: 80px 0;
+}
+
+.contact-row {
+  display: flex;
+}
+
+.contact-row-icon {
+  width: 33%;
+  text-align: center;
+}
+
+.contact-row-icon img {
+  height: 60px;
+}
+
+/* Footer */
+#mainfooter {
+  background: #00D4FF;
+  text-align: center;
+  padding: 30px;
+}
